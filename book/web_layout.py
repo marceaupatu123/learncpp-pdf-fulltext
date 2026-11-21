@@ -160,6 +160,119 @@ blockquote {
   break-inside: avoid !important;
 }
 
+.cpp-note {
+  display: block !important;
+  width: 100% !important;
+  margin: 4mm 0 !important;
+  padding: 3mm 4mm 3.5mm 4mm !important;
+  border: 1px solid #cbd2d9 !important;
+  border-left: 4px solid #6b7785 !important;
+  border-radius: 3px !important;
+  background: #f2f3f4 !important;
+  color: #242938 !important;
+  page-break-inside: avoid !important;
+  break-inside: avoid !important;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+.cpp-note.cpp-lightgreenbackground {
+  border-color: #b9d1b1 !important;
+  border-left-color: #4d8a3a !important;
+  background: #edf6ea !important;
+}
+
+.cpp-note.cpp-lightredbackground {
+  border-color: #ddb4b4 !important;
+  border-left-color: #b94a48 !important;
+  background: #fceded !important;
+}
+
+.cpp-note.cpp-lightbluebackground {
+  border-color: #b5c9dc !important;
+  border-left-color: #467da3 !important;
+  background: #edf4fa !important;
+}
+
+.cpp-note.cpp-lightpurplebackground {
+  border-color: #cbbbd8 !important;
+  border-left-color: #80639a !important;
+  background: #f3eef7 !important;
+}
+
+.cpp-note.cpp-lightyellowbackground {
+  border-color: #d9c98f !important;
+  border-left-color: #b39420 !important;
+  background: #fff8da !important;
+}
+
+.cpp-note.cpp-lightgraybackground {
+  border-color: #cbd0d5 !important;
+  border-left-color: #7d8791 !important;
+  background: #f1f3f4 !important;
+}
+
+.cpp-note .cpp-note-title,
+.cpp-note p.cpp-note-title,
+.cpp-note-title.cpp-bottomline {
+  margin: 0 0 2mm 0 !important;
+  padding: 0 0 1.5mm 0 !important;
+  border: 0 !important;
+  border-bottom: 1px solid currentColor !important;
+  background: transparent !important;
+  color: #30394a !important;
+  font-size: 11pt !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  text-decoration: none !important;
+  page-break-after: avoid !important;
+  break-after: avoid !important;
+}
+
+.cpp-note.cpp-lightgreenbackground .cpp-note-title {
+  color: #315d27 !important;
+  border-bottom-color: #b9d1b1 !important;
+}
+
+.cpp-note.cpp-lightredbackground .cpp-note-title {
+  color: #8b3432 !important;
+  border-bottom-color: #ddb4b4 !important;
+}
+
+.cpp-note.cpp-lightbluebackground .cpp-note-title {
+  color: #315e80 !important;
+  border-bottom-color: #b5c9dc !important;
+}
+
+.cpp-note.cpp-lightpurplebackground .cpp-note-title {
+  color: #60437a !important;
+  border-bottom-color: #cbbbd8 !important;
+}
+
+.cpp-note.cpp-lightyellowbackground .cpp-note-title {
+  color: #705a10 !important;
+  border-bottom-color: #d9c98f !important;
+}
+
+.cpp-note.cpp-lightgraybackground .cpp-note-title {
+  color: #4d5863 !important;
+  border-bottom-color: #cbd0d5 !important;
+}
+
+.cpp-note > p:not(.cpp-note-title) {
+  margin: 0 0 2mm 0 !important;
+}
+
+.cpp-note > p:not(.cpp-note-title):last-child {
+  margin-bottom: 0 !important;
+}
+
+.cpp-note ul,
+.cpp-note ol {
+  margin-top: 1mm !important;
+  margin-bottom: 1mm !important;
+}
+
 pre,
 code,
 kbd,
@@ -204,6 +317,60 @@ pre code {
   background: transparent !important;
   border: 0 !important;
   white-space: inherit !important;
+}
+
+.language-cpp,
+pre[class*="language-cpp"],
+pre[class*="cpp"],
+code[class*="language-cpp"],
+code[class*="cpp"] {
+  tab-size: 4 !important;
+  -moz-tab-size: 4 !important;
+}
+
+pre code,
+pre code *,
+.enlighter,
+.enlighter *,
+[class*="token"],
+[class*="token"] * {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+.line-numbers,
+.line-numbers .line-numbers-rows,
+.enlighter-linenumbers,
+.enlighter-linenumbers * {
+  color: #667085 !important;
+  font-size: 8.5pt !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.line-numbers-rows {
+  border-right: 1px solid #d8d8d8 !important;
+  padding-right: 2mm !important;
+  margin-right: 2mm !important;
+}
+
+.line-numbers-rows span,
+.line-numbers-rows span:before,
+.enlighter-linenumber {
+  display: block !important;
+  color: #667085 !important;
+  background: transparent !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+pre[class*="language-cpp"] code,
+code.language-cpp,
+.cpp-code,
+.cpp-code * {
+  white-space: pre-wrap !important;
+  word-break: normal !important;
+  overflow-wrap: anywhere !important;
 }
 
 .entry-meta,
@@ -251,7 +418,6 @@ button {
   display: none !important;
 }
 
-[class*="line-numbers-rows"],
 [class*="copy"],
 [class*="toolbar"] {
   display: none !important;
